@@ -1,0 +1,415 @@
+@font-face { 
+    font-family: "Hortensia";
+    src: url(/lib/Hortensia.ttf) format("truetype");
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: relative;
+}
+	
+.header{
+	background: #DDDDA0;
+	width: 100%;
+	height: 3em;
+	float: left;
+	position: relative;
+}
+
+.content_main {
+	background: #FFFFE0;
+	width: 100%;
+	height: calc(100% - 3em);
+	overflow-y: auto;
+	float: left;
+	position: relative;
+}
+
+.footer {
+	display: none;
+}
+
+.usr_name {
+	color: #000;
+	text-align: center;
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	font-weight: bold;
+	background:  #DDDDA0;
+	height: 2.2em;
+	padding-top: 0.8em;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	float: right;
+	position: relative;
+}
+
+#usr_name_rect {
+	display: none;
+}
+				
+.button_out {
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	color: #fff;
+	text-align: center;
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	background:  #FF6347;
+	width: 5em;
+	height: 2.2em;
+	padding-top: 0.8em;
+	float: right;
+	text-decoration: none;
+	position: relative;
+} 
+
+.button_out:hover {
+	background: #f44;
+	text-decoration: underline;
+}
+
+.home_b {
+	background: #CCCC99;
+	font: 100% "Hortensia", Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+	height: 2.2em;
+	padding-top: 1.2em;
+	padding-left: 0.4em;
+	margin: 0;
+	text-decoration: none;
+	float: left;
+	position: relative;
+}
+
+#home_b_rect {
+	border: 1.5em solid transparent;	
+	border-left: 1.5em solid #CCCC99;
+	border-top: 1.5em solid #CCCC99;
+	float: left;
+	position: relative;
+}
+
+#menu {
+	display: none;
+}
+ 
+.os {
+	background: #FFFFE0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+	
+.osf {
+	width: 70%;
+	max-width: 300px;
+	margin: 0;
+	top: 45%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -55%);
+	position: absolute;
+}
+
+.osn {
+	width: 100%;
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	color:#000;
+	text-align: center;
+	margin-top: 1em;
+	float: left;
+	position: relative;
+}
+
+.osp {
+	border: 1px solid #8a8a8a;
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	width: 70%;
+	height: 2em;
+	margin: 0; 
+	left: 50%;
+	margin-right: -50%;
+	margin-top: 0.3em;
+	transform: translate(-50%, 0);
+	border-radius: 7px 0px 7px 0px;
+	-moz-border-radius: 7px 0px 7px 0px;
+	-webkit-border-radius: 7px 0px 7px 0px;
+	position: relative;
+}
+
+.os_add_t {
+	border:1px solid #8a8a8a;
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	width: 100%; 
+	height: 2em;
+	margin: 0; 
+	left: 50%;
+	margin-right: -50%;
+	margin-top: 0.3em;
+	transform: translate(-50%, 0);
+	border-radius: 7px 0px 7px 0px;
+	-moz-border-radius: 7px 0px 7px 0px;
+	-webkit-border-radius: 7px 0px 7px 0px;
+	position: relative;
+}
+
+.os_add_d {
+	border:1px solid #8a8a8a;
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	width: 100%; 
+	height: 7em;
+	margin: 0; 
+	left: 50%;
+	margin-right: -50%;
+	margin-top: 0.3em;
+	transform: translate(-50%, 0);
+	box-sizing: border-box;
+	border-radius: 7px 0px 7px 0px;
+	-moz-border-radius: 7px 0px 7px 0px;
+	-webkit-border-radius: 7px 0px 7px 0px;
+	position: relative;
+}
+
+.osc {
+	font: 80% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	text-align: center;
+	width: 70%; 
+	height: 2em;
+	padding: 1em;
+	margin: 0;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
+	position: relative;
+}
+
+.osb {
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/	
+	width: 70%;
+	height: 2em;
+	margin: 0;
+	left: 50%;
+	margin-right: -50%;
+	margin-top: 0.3em;
+	transform: translate(-50%, 0);
+	position: relative;
+}
+
+.osi_err, .osi_reg {
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	text-align: center;
+	border: solid #944 1px;
+	background: #FBBBBB;
+	color:#000;
+	width: 80%;
+	max-width: 400px;
+	height: 2em;
+	padding-top: 0.5em;
+	margin: 0;
+	left: 50%;
+	margin-right: -50%;
+	margin-top: 1em;
+	transform: translate(-50%, 0);
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	float: left;
+	position: relative;
+}
+
+.osi_reg {
+	border: solid #494 1px;
+	background: #98FB98;
+}
+
+.tbl_str_new, .tbl_str_select, .tbl_str_close {
+	background: #9ACD32;
+	width: 100%;
+	height: 3.3em;
+	margin-top: 0.5em;
+	float: left;
+	position: relative;
+}
+
+.tbl_str_select {
+	background: #E9967A;
+}
+
+.tbl_str_close {
+	background: #C0C0C0;
+}
+
+.tbl_cell_new_date, .tbl_cell_new_loc, .tbl_cell_new_td,
+.tbl_cell_select_date, .tbl_cell_select_loc, .tbl_cell_select_td,
+.tbl_cell_close_date, .tbl_cell_close_loc, .tbl_cell_close_td  {
+	font: 90% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	text-align: left;
+	background: #b8eb50;
+	color:#000;
+	height: 2.5em;
+	padding: 0.4em;
+	margin-top: 0.2em;
+	margin-left: 0.2em;
+	float: left;
+	position: relative;
+}
+
+.tbl_cell_select_date, .tbl_cell_select_loc, .tbl_cell_select_td {
+	background: #ffb498;
+}
+
+.tbl_cell_close_date, .tbl_cell_close_loc, .tbl_cell_close_td {
+	background: #dedede;
+}
+
+.tbl_cell_new_date, .tbl_cell_select_date, .tbl_cell_close_date {
+	font: 80% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	text-align: center;
+	width: 5em;
+	height: 3.0em;
+	padding: 0.4em;
+	padding-top: 0.7em;
+	margin: 0em;
+}
+
+.tbl_cell_new_loc, .tbl_cell_select_loc, .tbl_cell_close_loc {
+	font: 80% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	text-align: center;
+	background: #a4d73c;
+	width: 5em;
+	height: 5em;
+	top: 3.4em;
+	margin: 0em;
+	margin-top: 0.7em;
+	padding: 0.4em;
+	padding-top: 0.5em;
+	position: absolute;
+	display: none;
+}
+
+.tbl_cell_select_loc {
+	background: #eba084;
+}
+
+.tbl_cell_close_loc {
+	background: #cacaca;
+}
+
+.tbl_cell_new_td, .tbl_cell_select_td, .tbl_cell_close_td {
+	font: 80% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	background: #7caf14;
+	width: calc(100% - 6.6em);
+	height: 5em;
+	left: 5.8em;
+	top: 3.4em;
+	margin: 0em;
+	margin-top: 0.7em;
+	padding: 0.4em;
+	padding-top: 0.5em;
+	position: absolute;
+	display: none;
+}
+
+.tbl_cell_select_td {
+	background: #cb785c;
+}
+
+.tbl_cell_close_td {
+	background: #a2a2a2;
+}
+
+.rect_new, .rect_select, .rect_close {
+	border: 1em solid transparent;	
+	border-top: 1em solid #7caf14;
+	left: calc(100%/2 - 6em);
+	padding: 0em;
+	margin: 0em;
+	margin-left: 2em;
+	margin-top: 1em;
+	float: left;
+	position: relative;
+	display: block;
+}
+
+.rect_select {
+	border-top: 1em solid #cb785c;
+}
+
+.rect_close {
+	border-top: 1em solid #a2a2a2;
+}
+
+.tbl_cell_new_status, .tbl_cell_select_status, .tbl_cell_close_status {
+	font: 80% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	font-weight: bold;
+	text-align: center;
+	background: #9ACD32;
+	color:#000;
+	height: 1.9em;
+	padding: 0.3em;
+	padding-top: 0.9em;
+	padding-right: 1em;
+	margin-top: 0.3em;
+	margin-left: 0.3em;
+	margin-bottom: 0.3em;
+	float: right;
+	position: relative;
+	display: none;
+}
+
+.tbl_cell_select_status {
+	background: #E9967A;
+	height: 2.5em;
+}
+
+.tbl_cell_close_status {
+	background: #C0C0C0;
+	height: 2.5em;
+}
+
+.tbl_b_sel, .tbl_b_cls, .tbl_b_del {
+	color: #fff;
+	text-align: center;
+	font: 100% Tahoma, sans-serif, Verdana;   /*verdana, arial, tahoma, sans-serif*/
+	background:  #72a50a;
+	width: 5em;
+	height: 2.3em;
+	margin: 0em;
+	padding: 0em;
+	margin-left: 0.2em;
+	padding-top: 1em;
+	float: right;
+	position: relative;
+	text-decoration: none;
+	display: none;
+}
+
+.tbl_b_cls {
+	background: #b96e51;
+} 
+
+.tbl_b_del {
+	background: #848484;
+} 
+
+.tbl_b_sel:hover {
+	background: #689b00;
+	text-decoration: underline;
+}
+
+.tbl_b_cls:hover {
+	background: #af6447;
+	text-decoration: underline;
+}
+
+.tbl_b_del:hover {
+	background: #707070;
+	text-decoration: underline;
+}

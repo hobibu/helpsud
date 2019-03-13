@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+	<link rel="icon" href="template/favicon.ico" type="image/x-icon" /> 
+	<link rel="shortcut icon" href="template/favicon.ico" type="image/x-icon" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<?PHP
+		if(mb_ereg("Mobile", $_SERVER['HTTP_USER_AGENT'])) 
+		{
+			echo '<link rel="stylesheet" type="text/css" href="template/main_mobile.css" />';
+			$_SESSION['mobile'] = true;
+		}
+		else 
+		{
+			echo '<link rel="stylesheet" type="text/css" href="template/main.css" />';
+			$_SESSION['mobile'] = false;
+		}
+	?>
+	<title>HELPSUD</title> 
+</head> 
+<body>
+	<div class="header">
+		<?PHP
+			echo $home;
+		?>
+	</div>
+	<div class="content_main">   
+	<audio id="audio_alert"></audio>
+		<?PHP
+			echo $result;
+		?>
+	</div>
+	<div class="footer">
+	    <div class="home_b">
+		<script type="text/javascript" language="javascript" src="lib/copyright.js">
+		</script>
+		</div>
+	</div>
+</body>
+</html>
